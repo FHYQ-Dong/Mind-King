@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'e:\Program\Python\Mind King\UI\MainWindow_Login.ui'
+# Form implementation generated from reading ui file 'e:\Program\Python\Mind-King\UI\MainWindow_Login.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.9
 #
@@ -14,23 +14,83 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow_Login(object):
     def setupUi(self, MainWindow_Login):
         MainWindow_Login.setObjectName("MainWindow_Login")
-        MainWindow_Login.resize(800, 601)
+        MainWindow_Login.resize(1388, 863)
+        MainWindow_Login.setMinimumSize(QtCore.QSize(0, 0))
         self.centralwidget = QtWidgets.QWidget(MainWindow_Login)
         self.centralwidget.setObjectName("centralwidget")
-        self.MainWindowFrame = QtWidgets.QFrame(self.centralwidget)
-        self.MainWindowFrame.setGeometry(QtCore.QRect(90, 40, 411, 451))
-        self.MainWindowFrame.setStyleSheet("#MainWindowFrame {\n"
+        self.MainWindow_Login_Frame_Left = QtWidgets.QFrame(self.centralwidget)
+        self.MainWindow_Login_Frame_Left.setGeometry(QtCore.QRect(300, 120, 411, 621))
+        self.MainWindow_Login_Frame_Left.setStyleSheet("#MainWindow_Login_Frame_Left {\n"
 "    background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(27, 109, 255, 255), stop:1 rgba(255, 46, 84, 255));\n"
 "    border-radius:20px;\n"
 "}")
-        self.MainWindowFrame.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.MainWindowFrame.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.MainWindowFrame.setObjectName("MainWindowFrame")
+        self.MainWindow_Login_Frame_Left.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.MainWindow_Login_Frame_Left.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.MainWindow_Login_Frame_Left.setObjectName("MainWindow_Login_Frame_Left")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.MainWindow_Login_Frame_Left)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.frame_2 = QtWidgets.QFrame(self.MainWindow_Login_Frame_Left)
+        self.frame_2.setStyleSheet("")
+        self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_2.setObjectName("frame_2")
+        self.pushButton_Minimize = QtWidgets.QPushButton(self.frame_2)
+        self.pushButton_Minimize.setGeometry(QtCore.QRect(30, 0, 20, 20))
+        self.pushButton_Minimize.setStyleSheet("background-color: rgb(0, 0, 255);\n"
+"border-radius:10px;")
+        self.pushButton_Minimize.setText("")
+        self.pushButton_Minimize.setFlat(False)
+        self.pushButton_Minimize.setObjectName("pushButton_Minimize")
+        self.pushButton_Quit = QtWidgets.QPushButton(self.frame_2)
+        self.pushButton_Quit.setGeometry(QtCore.QRect(0, 0, 20, 20))
+        self.pushButton_Quit.setStyleSheet("background-color: rgb(255, 0, 0);\n"
+"border-radius:10px;")
+        self.pushButton_Quit.setText("")
+        self.pushButton_Quit.setAutoDefault(False)
+        self.pushButton_Quit.setDefault(False)
+        self.pushButton_Quit.setFlat(False)
+        self.pushButton_Quit.setObjectName("pushButton_Quit")
+        self.verticalLayout.addWidget(self.frame_2)
+        self.label = QtWidgets.QLabel(self.MainWindow_Login_Frame_Left)
+        self.label.setStyleSheet("image: url(:/img/1.png);")
+        self.label.setAlignment(QtCore.Qt.AlignCenter)
+        self.label.setObjectName("label")
+        self.verticalLayout.addWidget(self.label)
+        self.frame_3 = QtWidgets.QFrame(self.MainWindow_Login_Frame_Left)
+        self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_3.setObjectName("frame_3")
+        self.verticalLayout.addWidget(self.frame_3)
+        self.MainWindow_Login_Frame_Right = QtWidgets.QFrame(self.centralwidget)
+        self.MainWindow_Login_Frame_Right.setGeometry(QtCore.QRect(710, 150, 461, 561))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.MainWindow_Login_Frame_Right.sizePolicy().hasHeightForWidth())
+        self.MainWindow_Login_Frame_Right.setSizePolicy(sizePolicy)
+        self.MainWindow_Login_Frame_Right.setMinimumSize(QtCore.QSize(211, 285))
+        self.MainWindow_Login_Frame_Right.setStyleSheet("#MainWindow_Login_Frame_Right{\n"
+"    background-color: rgb(255, 255, 255);\n"
+"    border-top-right-radius:20px;\n"
+"    border-bottom-right-radius:20px;\n"
+"}")
+        self.MainWindow_Login_Frame_Right.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.MainWindow_Login_Frame_Right.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.MainWindow_Login_Frame_Right.setObjectName("MainWindow_Login_Frame_Right")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.MainWindow_Login_Frame_Right)
+        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.MainWindow_Login_Frame_Right.raise_()
+        self.MainWindow_Login_Frame_Left.raise_()
         MainWindow_Login.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow_Login)
+        self.pushButton_Quit.clicked.connect(MainWindow_Login.close) # type: ignore
+        self.pushButton_Minimize.clicked.connect(MainWindow_Login.showMinimized) # type: ignore
         QtCore.QMetaObject.connectSlotsByName(MainWindow_Login)
 
     def retranslateUi(self, MainWindow_Login):
         _translate = QtCore.QCoreApplication.translate
         MainWindow_Login.setWindowTitle(_translate("MainWindow_Login", "MainWindow"))
+        self.label.setText(_translate("MainWindow_Login", "<html><head/><body><p><br/></p></body></html>"))
+import resource.img_rc
